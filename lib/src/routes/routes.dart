@@ -7,6 +7,8 @@ class Routes {
     switch (settings.name) {
       case '/':
         return MaterialPageRoute(builder: (_) => const HomeScreen());
+      case '/edit_reading':
+        return MaterialPageRoute(builder: (_) => const EditReading());
 
       default:
         return _errorRoute();
@@ -26,16 +28,3 @@ class Routes {
     });
   }
 }
-
-
-
-
-
-// case '/edit_user':
-      //   if (args is int) {
-      //     return MaterialPageRoute(
-      //         builder: (_) => EditUserScreen(
-      //               userId: args,
-      //             ));
-      //   }
-      //   return _errorRoute();
