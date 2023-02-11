@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hhu_helper/src/widgets/screens/screens.dart';
+import 'package:hhu_sqflite/src/screens/screens.dart';
 
 class Routes {
   static Route<dynamic> generateRoute(RouteSettings settings) {
@@ -7,30 +7,6 @@ class Routes {
     switch (settings.name) {
       case '/':
         return MaterialPageRoute(builder: (_) => const HomeScreen());
-
-      case '/reading':
-        return MaterialPageRoute(
-          builder: (_) => const ReadingScreen(),
-        );
-
-      // case '/camera':
-      //   return MaterialPageRoute(
-      //     builder: (_) => const CameraScreen(cameras : args),
-      //   );
-
-      case '/qr':
-        return MaterialPageRoute(
-          builder: (_) => const QRScreen(),
-        );
-      case '/edit_reading':
-        return MaterialPageRoute(
-          builder: (_) => const ReadingScreen(),
-        );
-
-      // case '/gallery':
-      //   return MaterialPageRoute(
-      //     builder: (_) => const ReadingScreen(),
-      //   );
 
       default:
         return _errorRoute();
